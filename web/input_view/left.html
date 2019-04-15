@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="/css/index/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="/css/index/animate.css" rel="stylesheet">
+</head>
+<script language=javascript src='../js/jquery.js'></script>
+<script language=javascript src='../js/common.js'></script>
+
+<script type="text/javascript">
+    function load()
+    {
+        request("/getLoginName",null,$("#name"));
+    }
+</script>
+<body onload="load()">
+        <div  style="width: 200px;height: 100%;float: left;" class="left_main">
+        <font color="blue" size="3" id="name"></font><hr>  <!--从session里获取之前加入的登录用户名-->
+        	<font color="blue" size="3">权限:管理员</font><hr>
+            <ul class="nav" id="side-menu">
+				<li>
+					<a href="#"><i class="fa -fa-folder"></i><span class="nav-label" style="font-weight: bold;font-size:20px;color:black">基础信息</span><span class="fa arrow"></span></a>
+					<ul class="nav nav-second-level">
+						<li><a class="J_menuItem" href="/showMaterial" target="main">物料信息</a></li>
+						<li><a class="J_menuItem" href="/showMaterialPrice" target="main">价格信息</a></li>
+					</ul>
+				</li>
+                <li>
+                    <a href="#"><i class="fa fa-folder"></i> <span class="nav-label" style="font-weight: bold;font-size:20px;color:black">进仓管理</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+						<li><a class="J_menuItem" href="/showpurchasePlan" target="main">采购计划书</a></li>
+						<li><a class="J_menuItem" href="/showPurchase" target="main">采购订单</a></li>
+						<li><a class="J_menuItem" href="/showExaminegood" target="main">进仓验货单</a></li>
+                        <li><a class="J_menuItem" href="/showGoodCheck" target="main">客诉报告单</a></li>
+						<li><a class="J_menuItem" href="/showStoragein" target="main">进仓单</a></li>
+						<li><a class="J_menuItem" href="/showStorageOut" target="main">退货进仓单</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-folder"></i><span class="nav-label" style="font-weight: bold;font-size:20px;color:black">销售管理</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a class="J_menuItem" href="/ShowOrderMaster"  target="main">销售订单表</a></li>
+                        <li><a class="J_menuItem" href="/ShowDirectOrderMaster"  target="main">直送订单表</a></li>
+                        <li><a class="J_menuItem" href="/view/saleconfirmmaster.jsp"  target="main">销售确认书</a></li>
+                        <li><a class="J_menuItem" href="/ToViewSpecialPrice"  target="main">特价表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-folder"></i><span class="nav-label" style="font-weight: bold;font-size:20px;color:black">出仓管理</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a class="J_menuItem" href="/view/cut_outstoragemaster.jsp" target="main">分切成品出仓单</a></li>
+                        <li><a class="J_menuItem" href="/view/finishoutstoragemaster.jsp" target="main">分切出仓单</a></li>
+                        <li><a class="J_menuItem" href="/view/nfinishoutstoragemaster.jsp" target="main">非分切出仓单</a></li>
+                        <li><a class="J_menuItem" href="/view/repetory.jsp" target="main">库存表</a></li>
+                    </ul>
+                </li>
+      			<li>
+                    <a href="../index.html" target="_parent"><i class="fa fa-folder"></i> <span class="nav-label" style="font-weight: bold;font-size:20px;color:black">退出系统</span><span class="fa arrow"></span></a>
+                </li>
+            </ul>
+        </div>	
+<script src="/js/jquery/jquery-3.1.1.min.js?v=2.1.4"></script>
+
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/index/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="/js/index/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="/js/index/plugins/layer/layer.min.js"></script>
+
+<!-- 自定义js -->
+<script src="/js/index/hAdmin.js?v=4.1.0"></script>
+<script type="text/javascript" src="/js/index/index.js"></script>
+</body>
+</html>

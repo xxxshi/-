@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>物料输入</title>
+	<link href="formCss.css" rel="stylesheet">
+</head>
+<body>
+	<div class="materiel" >
+		<form method="post" action="materielSuccess.html">
+			<div class="itemid"> <!--暂登录-->
+				<label>物料编码：</label>
+				<input type="text" name="itemid"  tabindex="1" autocomplete="on" /> <!--aut功能-->
+			</div>
+			<div class="brand">
+				<label>品牌：</label>
+				<input type="text" name="brand"   tabindex="2"/><!--tabinde 可用tab键进-->
+			</div>
+			<div class="papertype">
+				<label>纸种:</label>
+				<input type="text" name="papertype"   tabindex="2"/><!--tabindex键进行顺序切换-->
+			</div>
+			<div class="rank">
+				<label>级别:</label>
+				<input type="text" name="rank"   tabindex="2"/><!--ta的链接 可用tab键进行顺序切换-->
+			</div>
+			<div class="gweight">
+				<label>克重:</label>
+				<input type="text" name=""   tabindex="2"/><!--键顺序的链接 可用tab键进行顺序切换-->
+			</div>
+			<div class="specification">
+				<label>规格:</label>
+				<input type="text" name="gweight"   tabindex="2"/><!--tabindex:带有指定 tab -->
+			</div>
+			<div class="unit">
+				<label>单位:</label>
+				<input type="text" name="unit"   tabindex="2"/><!--tabindex:带有指定-->
+			</div>
+			<div class="producttype">
+				<label>产品类型:</label>
+				<input type="text" name="producttype"   tabindex="2"/><!--tabindex:带有指定 tab-->
+			</div>
+			<div class="orign">
+				<label>成品对应的原纸编码:</label>
+				<input type="text" name="orign"   tabindex="2"/>
+			</div><br>
+			
+			<div class="materielAdd">
+				<label></label>
+				<button type="submit" tabindex="5" >添加物料</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+<!-- drop table if exists materiel;
+create table materiel(
+itemid varchar(20) primary key, #物料编码
+brand varchar(20) comment'品牌',
+papertype varchar(20) comment'纸种',
+rank char(2) comment'级别',
+gweight numeric(8,2) comment'克重',
+specification varchar(10) comment'规格',
+unit char(2) comment'单位',
+producttype varchar(10) comment'产品类型',
+orign varchar(20) comment'成品对应的原纸编码'
+)ENGINE=InnoDB DEFAULT CHARSET=utf8; -->

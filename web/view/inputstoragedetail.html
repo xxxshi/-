@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>销售单明细</title>
+<style>
+	table
+  {
+  border-collapse:collapse;
+ 
+  }
+
+table,th, td
+  {
+  border: 1px solid ;
+  
+  }
+	.table1{
+		 height: 600px;
+         width: 980px;
+		
+}
+	
+</style>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+</head>
+
+<body>
+    <p ><h1 align="center">出仓明细表</h1></p>
+
+	<p style="text-align: right" >
+
+	</p>
+
+ 	<p>&nbsp;</p>
+ 	<div align="center">
+  	<table  style="width: 980px ;height: 198px;">
+ 	 	<tr>
+ 	 	<td width="245" style="background-color: lightgrey" >纸厂简称</td>
+ 	 	<td width="245" >  ${sale.ordermasterid}</td>
+ 	 	<td width="245" style="background-color: lightgrey" >采购单号</td>
+ 	 	<td width="245" > &nbsp;${sale.ordermasterid}</td>
+
+ 	 	</tr>
+ 	 	<tr>
+
+ 	 	 <td width="245" style="background-color: lightgrey">出仓日期</td>
+	 	<td width="245">&nbsp; <input class="Wdate" type="text" onClick="WdatePicker({el:this,dateFmt:'yyyy-MM-dd '})" name="recordComm_ate" value="saledate"></td>
+
+ 	 	</tr>
+
+	 </table>
+	 	 <p>&nbsp;</p>
+	</div>
+
+	<div>
+	  <table style="width: 980px ;height: 198px;">
+ 	 	<tr>
+ 	 	<td  style="background-color: lightgrey" width="130">品牌</td>
+	 	<td  width="130">&nbsp; ${sale.ordermasterid}</td>
+ 	 	<td style="background-color: lightgrey" width="130">纸种</td>
+ 	 	<td  width="130">  ${sale.ordermasterid}</td>
+ 	 	<td style="background-color: lightgrey" width="130">级别</td>
+ 	 	<td  width="130"> &nbsp;${sale.ordermasterid}</td>
+
+ 	 	</tr>
+ 	 	<tr>
+ 	 	<td  style="background-color: lightgrey">克重</td>
+	 	<td >&nbsp; ${sale.ordermasterid}</td>
+	 	<td  style="background-color: lightgrey">规格</td>
+	 	<td >&nbsp; ${sale.ordermasterid}</td>
+ 	 	 <td  style="background-color: lightgrey">单位</td>
+	 	<td >&nbsp; ${sale.ordermasterid}</td>
+
+ 	 	</tr>
+
+	 </table>
+</div>
+	 <p>&nbsp;</p>
+	 <div align="center">
+		  <table style="width: 980px ;height: 198px;">
+				<tr>
+				<td width="245" style="background-color: lightgrey" >进仓数量</td>
+				<td width="245" >  ${sale.ordermasterid}</td>
+				<td width="245" style="background-color: lightgrey" >件数</td>
+				<td width="245" > &nbsp; ${sale.ordermasterid}</td>
+
+				</tr>
+				<tr>
+				<td width="245" style="background-color: lightgrey">库位</td>
+				<td width="245">&nbsp;${sale.ordermasterid}</td>
+				 <td width="245" style="background-color: lightgrey">备注</td>
+				<td width="245">&nbsp; ${sale.ordermasterid}</td>
+
+				</tr>
+
+			 </table>
+	 	 <p>&nbsp;</p>
+		 </div>
+	 <div align="center">
+			<a href="outstorage.html"><button style="background-color: #FFD800;">返回</button></a>
+	 </div>
+
+	</body>
+</html>

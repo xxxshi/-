@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>添加采购计划</title>
+</head>
+	<style>
+		tr,th,td{
+			border: 1px solid gray;
+			text-align: center;
+			width: 180px;
+			height: 45px;
+		}
+		input[type="text"],select,input[type="date"]{
+			width: 180px;
+			height: 45px;
+			text-align: center;
+			font-size: 18px;
+		}
+		a{
+			text-decoration: none;
+		}
+	</style>
+	<script type="text/javascript" src="../js/purchaseplanAdd.js"></script>
+<body>
+	<h1 align="center">添加采购计划</h1>
+	<div align="center">
+		<form id="purchaseplanForm" action="/purchasePlanAdd" method="post">
+		<table style="border: 1px;border-collapse: collapse;">
+			<tr>
+				<td  style="background: lightgray;">框架合同号</td>
+				<td><input type="text" name="contractCode"/></td>
+				<td  style="background: lightgray;">供应商</td>
+				<td><input type="text" name="supply"/></td>
+				<td style="background: lightgray;">合同日期</td>
+				<td><input type="date" name="contractDate"/></td>
+			</tr>
+		</table>
+		<h2>采购物料添加</h2>
+		<table style="border: 1px;border-collapse: collapse;" id="materialContainer">
+			<tr>
+			<td style="background: lightgray;">物料编码</td><td style="background: lightgray;" >件数</td><td style="background: lightgray;">运费</td>
+				<td style="background: lightgray;">重量</td><td style="background: lightgray;">删除</td>
+			</tr>
+			<tr>
+				<td><select onclick="getMaterialCodes(this)" name="itemId"></select></td><td><input type="text" name="itemnum"></td>
+				<td><input type="text" name="transportationFee"></td>
+				<td><input type="text" name="weight"></td>
+				<td><a href="#" onclick="RemoveMaterial(this);">删除</a></td>
+			</tr>
+		</table>
+		</form>
+		<button style="background: yellow; width: 150px; height: 40px; margin-top:50px;" onclick="submitForm()">添加采购计划</button>
+		<button style="background: yellow; width: 150px; height: 40px; margin-top:50px;" onClick="AddMaterial();">添加物料</button>
+	</div>
+</body>
+</html>

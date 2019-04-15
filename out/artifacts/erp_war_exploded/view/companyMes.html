@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>添加本公司信息</title>
+	<link rel="stylesheet" type="text/css" href="formCss.css">
+</head>
+
+<body>
+	<div class="companyMes" >
+		<form method="post" action="materielSuccess.html">
+			<div class="companyCode"> <!--暂登录-->
+				<label>公司编号:</label>
+				<input type="text" name="companyCode"  tabindex="1" autocomplete="on" /> <!--aut功能-->
+			</div>
+	
+			<div class="companyName">
+				<label>公司名:</label>
+				<input type="text" name="companyName"  tabindex="2"/><!--tabindex键进行顺序切换-->
+			</div>
+			<div class="companyAddreee"> <!--暂登录-->
+				<label>公司地址:</label>
+				<input type="text" name="companyAddreee"  tabindex="1" autocomplete="on" /> <!--aut功能-->
+			</div>
+			<div class="companyLoginName">
+				<label>公司登录账户:</label>
+				<input type="text" name="companyLoginName"   tabindex="2"/><!--tabinde 可用tab键进-->
+			</div>
+			<div class="loginPassword">
+				<label>登录密码:</label>
+				<input type="text" name="loginPassword"   tabindex="2"/><!--tabinde 可用tab键进-->
+			</div>
+			<div class="valueAdd">
+				<label></label>
+				<button type="submit" tabindex="5" >添加本公司</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

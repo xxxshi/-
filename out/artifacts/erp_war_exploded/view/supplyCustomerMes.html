@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>添加与本公司业务相关的公司信息</title>
+	<link rel="stylesheet" type="text/css" href="formCss.css">
+</head>
+
+<body>
+	<div class="supplyCustomerMes" >
+		<form method="post" action="materielSuccess.html">
+			<div class="companyNumber"> <!--暂登录-->
+				<label>公司编号:</label>
+				<input type="text" name="companyNumber"  tabindex="1" autocomplete="on" /> <!--aut功能-->
+			</div>
+			<div class="companyCode">
+				<label>公司编号外键:</label>
+				<input type="text" name="companyCode"   tabindex="2"/><!--tabinde 可用tab键进-->
+			</div>
+			<div class="companyName">
+				<label>公司名:</label>
+				<input type="text" name="companyName"   tabindex="2"/><!--tabindex键进行顺序切换-->
+			</div>
+			<div class="companyAddreee"> <!--暂登录-->
+				<label>公司地址:</label>
+				<input type="text" name="companyAddreee"  tabindex="1" autocomplete="on" /> <!--aut功能-->
+			</div>
+			<div class="companyType">
+				<label>0代表供应商 1代表客户:</label>
+				<input type="text" name="companyType"   tabindex="2"/><!--tabinde 可用tab键进-->
+			</div>
+			
+			
+			<div class="valueAdd">
+				<label></label>
+				<button type="submit" tabindex="5" >添加业务公司</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
